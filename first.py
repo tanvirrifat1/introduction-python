@@ -16,15 +16,34 @@
 # print(largeValue)
 
 
-def double(x):
-    return x * 2
+# def double(x):
+#     return x * 2
 
 
-print(double(5))
+# print(double(5))
 
 
-def sum(num1, num2):
-    return num1 + num2
+# def sum(num1, num2):
+#     return num1 + num2
 
 
-print(sum(2, 3))
+# print(sum(2, 3))
+
+
+# def fullName(firstName, lastName):
+#     name = f"{firstName} {lastName}"
+#     print(name)
+#     return name
+
+
+# fullName("John", "Doe")
+
+
+def multiply(num1, num2):
+
+    sum = num1 * num2
+    multiply = sum * 2
+    return multiply, sum
+
+
+print(multiply(2, 3))
