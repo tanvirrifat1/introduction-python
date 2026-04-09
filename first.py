@@ -39,11 +39,21 @@
 # fullName("John", "Doe")
 
 
-def multiply(num1, num2):
+# def multiply(num1, num2):
 
-    sum = num1 * num2
-    multiply = sum * 2
-    return multiply, sum
+#     sum = num1 * num2
+#     multiply = sum * 2
+#     return multiply, sum
 
 
-print(multiply(2, 3))
+# print(multiply(2, 3))
+
+
+numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+
+    if num % 2 == 0:
+        print(f"{num} is even")
+    else:
+        print(f"{num} is odd")
