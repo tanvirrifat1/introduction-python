@@ -63,7 +63,41 @@
 # print(height)
 
 
-count = [45, 80, 90, 100]
+# count = [45, 80, 90, 100]
 
-count.append(120)
-print(count)
+# count.append(120)
+# print(count)
+
+
+# numbers = [10, 54, 11, 89, 56, 36, 33, 50]
+
+
+# for num in numbers:
+#     if num % 2 == 0:
+#         print(f"{num} is even")
+#     else:
+#         print(f"{num} is odd")
+
+
+players = [
+    "Alice",
+    "Bob",
+    "Charlie",
+]
+
+ages = [
+    25,
+    30,
+    22,
+]
+
+
+age_com = []
+
+
+for player in players:
+    for age in ages:
+        age_com.append([player, age])
+
+
+print(age_com)
