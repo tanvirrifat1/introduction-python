@@ -49,11 +49,21 @@
 # print(multiply(2, 3))
 
 
-numbers = [1, 2, 3, 4, 5]
+# numbers = [1, 2, 3, 4, 5]
 
-for num in numbers:
+# for num in numbers:
 
-    if num % 2 == 0:
-        print(f"{num} is even")
-    else:
-        print(f"{num} is odd")
+#     if num % 2 == 0:
+#         print(f"{num} is even")
+#     else:
+#         print(f"{num} is odd")
+
+
+# height = max(1.75, 1.80, 1.65)
+# print(height)
+
+
+count = [45, 80, 90, 100]
+
+count.append(120)
+print(count)
