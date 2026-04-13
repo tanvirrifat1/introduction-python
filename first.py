@@ -79,25 +79,30 @@
 #         print(f"{num} is odd")
 
 
-players = [
-    "Alice",
-    "Bob",
-    "Charlie",
-]
+# players = [
+#     "Alice",
+#     "Bob",
+#     "Charlie",
+# ]
 
-ages = [
-    25,
-    30,
-    22,
-]
-
-
-age_com = []
+# ages = [
+#     25,
+#     30,
+#     22,
+# ]
 
 
-for player in players:
-    for age in ages:
-        age_com.append([player, age])
+# age_com = []
 
 
-print(age_com)
+# for player in players:
+#     for age in ages:
+#         age_com.append([player, age])
+
+
+# print(age_com)
+
+
+things = ["apple", "banana", "cherry"]
+for thing in "apples":
+    print("yes")
