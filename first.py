@@ -1,49 +1,59 @@
-# numbers = [1, 2, 3, 4, 5]
+# things = "apple", "banana", "cherry"
 
 
-# for num in numbers:
-#     print(num)
+# if "banansa" in things:
+#     print("Yes, 'banana' is in the fruits list")
+# else:
+#     print("No, 'banana' is not in the fruits list")
 
 
-# for i in range(1, 6, 3):
-#     print(i)
+# numbers = [10, 56, 41, 11, 11, 45, 45, 78, 98, 100]
+
+# unique_numbers = list(set(numbers))
+# print(unique_numbers)
 
 
-# numbrs = [100, 500, 200]
+# person = {"name": "John", "age": 30, "city": "New York"}
 
 
-# largeValue = max(numbrs)
-# print(largeValue)
+# for key, val in person.items():
+#     print(key, val)
 
 
-# def double(x):
-#     return x * 2
+# numbers = [10, 56, 41, 11, 11, 45, 45, 78, 98, 100]
 
 
-# print(double(5))
+# for i, num in enumerate(numbers):
+#     print(i, num)
 
 
-# def sum(num1, num2):
-#     return num1 + num2
+# from math import *
+# from random import *
+
+# result = ceil(3.7)
+# # print(result)
 
 
-# print(sum(2, 3))
+# print(randint(1, 10))
 
 
-# def fullName(firstName, lastName):
-#     name = f"{firstName} {lastName}"
-#     print(name)
-#     return name
+# import pyautogui
+# from time import sleep
+
+# sleep(5)
 
 
-# fullName("John", "Doe")
+# for i in range(0, 100):
+#     pyautogui.write(
+#         "Tumi akta Kola",
+#         interval=0.25,
+#     )
+#     pyautogui.press("enter")
 
 
-# def multiply(num1, num2):
+# import cv2
 
-#     sum = num1 * num2
-#     multiply = sum * 2
-#     return multiply, sum
+# cam = cv2.VideoCapture(0)
 
 
 # print(multiply(2, 3))
@@ -103,6 +113,33 @@
 # print(age_com)
 
 
-things = ["apple", "banana", "cherry"]
-for thing in "apples":
-    print("yes")
+# things = ["apple", "banana", "cherry"]
+# for thing in "apples":
+#     print("yes")
+
+
+# print("hello")
+
+
+# double = lambda num: num * 2
+
+
+# print(double(5))
+
+
+# actors = [
+#     {"name": "tom cruise", "age": 56},
+#     {"name": "brad pitt", "age": 40},
+#     {"name": "tom hanks", "age": 35},
+#     {"name": "tom brady", "age": 56},
+# ]
+
+# junior = filter(lambda actor: actor["age"] < 50, actors)
+# print(list(junior))
+
+
+n = int(input())
+digits = input().strip()
+
+total = sum(int(d) for d in digits)
+print(total)
