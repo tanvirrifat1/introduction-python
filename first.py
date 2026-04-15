@@ -51,11 +51,16 @@
 #     pyautogui.press("enter")
 
 
-import cv2
+# import cv2
 
-cam = cv2.VideoCapture(0)
+# cam = cv2.VideoCapture(0)
 
-while True:
-    _, frame = cam.read()
-    cv2.imshow("my cam", frame)
-    cv2.waitKey(1)
+# while True:
+#     _, frame = cam.read()
+#     cv2.imshow("my cam", frame)
+#     cv2.waitKey(1)
+
+
+with open("message.txt", "r") as file:
+    content = file.read()
+    print(content)
