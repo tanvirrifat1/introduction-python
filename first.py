@@ -43,9 +43,9 @@
 # sleep(5)
 
 
-# for i in range(0, 10):
+# for i in range(0, 100):
 #     pyautogui.write(
-#         "Bbu i love you",
+#         "Tumi akta Kola",
 #         interval=0.25,
 #     )
 #     pyautogui.press("enter")
