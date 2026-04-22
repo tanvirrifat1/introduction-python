@@ -1,12 +1,18 @@
-class Laptop:
-    def __init__(self, brand, price, color, memory):
+class Gedget:
+    def __init__(self, brand, price, color, origin):
         self.brand = brand
         self.price = price
         self.color = color
-        self.memory = memory
+        self.origin = origin
 
     def run(self):
-        return f"Running {self.brand}"
+        return f"Running  Laptop: {self.brand}"
 
-    def coding(self):
-        return f"Learning coding on python"
+
+class Laptop:
+    def __init__(self, memory, ssd):
+        self.memory = memory
+        self.ssd = ssd
+
+    def run(self):
+        return f"Running Laptop with {self.memory} and {self.ssd}"
