@@ -1,18 +1,20 @@
-class Gedget:
-    def __init__(self, brand, price, color, origin):
-        self.brand = brand
+class Vehicle:
+    def __init__(self, name, price):
+        self.name = name
         self.price = price
-        self.color = color
-        self.origin = origin
 
-    def run(self):
-        return f"Running  Laptop: {self.brand}"
+    def __repr__(self):
+        return f"{self.name} costs {self.price}"
+
+    def move(self):
+        pass
 
 
-class Laptop:
-    def __init__(self, memory, ssd):
-        self.memory = memory
-        self.ssd = ssd
+class Car(Vehicle):
+    def __init__(self, name, price, seats):
+        self.seats = seats
+        super().__init__(name, price)
 
-    def run(self):
-        return f"Running Laptop with {self.memory} and {self.ssd}"
+
+green_line = Car("Green Line", 30000, 5)
+print(green_line)
