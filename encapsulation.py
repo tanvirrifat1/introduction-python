@@ -9,6 +9,13 @@ class Bank:
     def get_balance(self):
         return self.__balance
 
+    def withdraw(self, amount):
+
+        if amount < self.__balance:
+            self.__balance = self.__balance - amount
+        else:
+            return f"Insufficient funds. Current balance: {self.__balance}"
+
 
 rif = Bank("Rif", 1000)
 
