@@ -1,14 +1,11 @@
-class Shopping:
-    cart = []
-    origin = "Dhaka"
+def double_decker():
 
-    def __init__(self, name, location):
-        self.name = "Jamuna Shopping Mall"
-        self.location = "Banani"
+    print("Double Decker")
 
-    def purchase(self, item, price, amount):
-        remining = amount - price
-        print(f"Purchased {item} for {price}. Remaining balance: {remining}")
+    def inner_fun():
+        print("Inner Function")
+
+    return inner_fun
 
 
-Shopping.purchase(Shopping, "Shirt", 500, 1000)
+print(double_decker())
