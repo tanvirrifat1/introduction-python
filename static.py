@@ -1,11 +1,24 @@
-def double_decker():
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    print("Double Decker")
+    @property
+    def age(self):
+        return self._age
 
-    def inner_fun():
-        print("Inner Function")
+    @age.setter
+    def age(self, value):
+        if value > 0:
+            self._age = value
+        else:
+            print("Invalid age")
 
-    return inner_fun
+
+person = Person("Alice", 30)
 
 
-print(double_decker())
+person.age = 40
+person.name = "Bob"
+print(person.age)
+print(person.name)
