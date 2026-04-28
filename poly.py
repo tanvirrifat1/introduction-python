@@ -1,20 +1,19 @@
-class Animal:
-    def __init__(self, name):
+class Person:
+    def __init__(self, name, age, height, weight):
         self.name = name
+        self.age = age
+        self.height = height
+        self.weight = weight
 
-    def make_sound(self):
-        print("Some sound")
-
-
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name)
-
-    def make_sound(self):
-        print("Woof!")
+    def eat(self):
+        print("Eating...")
 
 
-dog = Dog("Buddy")
+class Cricketer(Person):
+    def __init__(self, name, age, height, weight, team):
+        super().__init__(name, age, height, weight)
+        self.team = team
 
 
-dog.make_sound()
+sakib = Cricketer("Sakib", 35, 5.9, 75, "Bangladesh")
+sakib.eat()
