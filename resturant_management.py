@@ -1,32 +1,48 @@
-class Animal:
-    def sound(self):
-        print("Some sound")
+from abc import ABC
 
 
-class Dog(Animal):
-    def sound(self):  # Override parent method
-        print("Woof! Woof!")
-
-    def bark(self):
-        print("Bark")
-
-
-class Cat(Animal):
-    def sound(self):  # Override parent method
-        print("Meow! Meow!")
+class User(ABC):
+    def __init__(self, name, phone, email, address):
+        self.name = name
+        self.phone = phone
+        self.email = email
+        self.address = address
 
 
-class Cow(Animal):
-    def sound(self):  # Override parent method
-        print("Moo! Moo!")
+class Employee(User):
+    def __init__(self, name, phone, email, address, age, designation, salary):
+        super().__init__(name, phone, email, address)
+        self.age = age
+        self.designation = designation
+        self.salary = salary
 
 
-# Polymorphism in action
-animals = [Dog(), Cat(), Cow()]
+emp = Employee("Rohit", 1234567890, "i2wYr@example.com", "Pune", 25, "Manager", 50000)
 
-for animal in animals:
-    animal.sound()  # Same method, different behavior
 
-d = Dog()
-d.sound()
-d.bark()
+class Admin(User):
+    def __init__(self, name, phone, email, address, age, designation, salary):
+        super().__init__(name, phone, email, address)
+        self.employees = []
+
+    def add_employee(self, name, email, phone, address, age, designation, salary):
+        emply = Employee(name, email, phone, address, age, designation, salary)
+        self.employees.append(emply)
+        print(f"Employee added successfully ${emply.name}")
+
+    def view_employees(self):
+        for emp in self.employees:
+            print(
+                emp.name,
+                emp.email,
+                emp.phone,
+                emp.address,
+                emp.age,
+                emp.designation,
+                emp.salary,
+            )
+
+
+ad = Admin("Rohit", 1234567890, "i2wYr@example.com", "Pune", 25, "Manager", 50000)
+ad.add_employee("Rohit", 1234567890, "i2wYr@example.com", "Pune", 25, "Manager", 50000)
+ad.view_employees()
