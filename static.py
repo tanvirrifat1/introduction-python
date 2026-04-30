@@ -1,24 +1,18 @@
-class Person:
-    def __init__(self, name, age):
+class Bat:
+    def __init__(self, brand):
+        self.brand = brand
+
+
+class Cricketer:
+    def __init__(self, name, bat):
         self.name = name
-        self.age = age
+        self.bat = bat
 
-    @property
-    def age(self):
-        return self._age
-
-    @age.setter
-    def age(self, value):
-        if value > 0:
-            self._age = value
-        else:
-            print("Invalid age")
+    def show_bat(self):
+        print(f"{self.name} uses {self.bat.brand} bat")
 
 
-person = Person("Alice", 30)
+bat1 = Bat("MRF")
+sakib = Cricketer("Sakib", bat1)
 
-
-person.age = 40
-person.name = "Bob"
-print(person.age)
-print(person.name)
+sakib.show_bat()
