@@ -1,14 +1,7 @@
-class Shop:
-    cart = []
+choice = int(input("enter your choice : "))
 
-    def __init__(self, buyer):
-        self.buyer = buyer
+if choice == 1:
+    print("hello")
 
-    def add_to_cart(self, item):
-        self.cart.append(item)
-        print(f"{item} added to cart")
-
-
-rifat = Shop("rifat")
-rifat.add_to_cart("laptop")
-rifat.add_to_cart("phone")
+elif choice == 2:
+    print("hi")
