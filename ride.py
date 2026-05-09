@@ -23,3 +23,17 @@ class Ride:
 
     def __repr__(self):
         return f"Ride from {self.start_location} to {self.end_location}"
+
+
+class RideRequest:
+    def __init__(self, rider, end_location):
+        self.rider = rider
+        self.end_location = end_location
+
+    def find_diver(self, ride_request):
+        if len(self.available_divers) > 0:
+            print("Looking for divers...")
+            diver = self.available_divers[0]
+            ride = Ride(ride_request.rider.current_location, ride_request.end_location)
+            diver.accept_rider(ride)
+            return diver
