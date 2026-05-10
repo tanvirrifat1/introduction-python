@@ -44,3 +44,34 @@ class Admin:
 
 # admin1 = Admin("admin", "1234")
 # print(admin1.login("admin", "1234"))
+
+
+class Bus_System:
+    def __init__(
+        self,
+    ):
+        self.buses = []
+        self.passengers = []
+
+    def add_bus(self, number, route, seats):
+        bus = Bus(number, route, seats)
+
+        self.buses.append(bus)
+
+        print(f"{number} Bus added successfully")
+
+    def show_buses(self):
+        if not self.buses:
+            print("No buses found")
+            return
+
+        for bus in self.buses:
+            print(f"Bus Number: {bus.number}")
+            print(f"Route: {bus.route}")
+            print(f"Total Seats: {bus.total_seats}")
+            print(f"Available Seats: {bus.available_seats()}")
+
+
+bus = Bus_System()
+bus.add_bus(10, "Dhaka to Chittagong", 50)
+bus.show_buses()
