@@ -15,9 +15,32 @@ class Bus:
         return False
 
 
-bus1 = Bus(10, "Dhaka to Chittagong", 50)
-print(bus1.available_seats())
-print(bus1.book_seat())
-print(bus1.available_seats())
-print(bus1.book_seat())
-print(bus1.available_seats())
+# bus1 = Bus(10, "Dhaka to Chittagong", 50)
+# print(bus1.available_seats())
+# print(bus1.book_seat())
+# print(bus1.available_seats())
+# print(bus1.book_seat())
+# print(bus1.available_seats())
+
+
+class Passenger:
+    def __init__(self, name, phone, bus):
+        self.name = name
+        self.phone = phone
+        self.bus = bus
+
+
+class Admin:
+
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+    def login(self, username, password):
+        if username == self.username and password == self.password:
+            return True
+        return False
+
+
+# admin1 = Admin("admin", "1234")
+# print(admin1.login("admin", "1234"))
