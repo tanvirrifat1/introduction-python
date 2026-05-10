@@ -1,6 +1,23 @@
 from datetime import datetime
 
 
+class RideSharing:
+    def __init__(self, company_name):
+        self.company_name = company_name
+        self.riders = []
+        self.drivers = []
+        self.rides = []
+
+    def add_rider(self, rider):
+        self.riders.append(rider)
+
+    def add_diver(self, diver):
+        self.drivers.append(diver)
+
+    def __str__(self):
+        return f"Company Name: {self.company_name} with riders: {len(self.riders)} and drivers: {len(self.drivers)}"
+
+
 class Ride:
     def __init__(self, start_location, end_location):
         self.start_location = start_location

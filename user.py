@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from ride import RideSharing
 
 
 class User(ABC):
